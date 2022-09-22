@@ -9,6 +9,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
@@ -55,7 +56,7 @@ public class HelloApplication extends Application {
         Label clave = new Label("Clave");
         grid.add(clave, 0, 2);
 
-        TextField txtClave = new TextField();
+        PasswordField txtClave = new PasswordField();
         grid.add(txtClave,1,2);
 
         Button btn = new Button("Iniciar Sesión");
@@ -86,7 +87,7 @@ public class HelloApplication extends Application {
                                txt.setText("No tienes clave");
                            }
                            else {
-                               txt.setText("Tu usuarioa es: "+ txtUsuario.getText()+ " y tu contraseña es: " +txtClave.getText());
+                               txt.setText("Tu usuario es: "+ txtUsuario.getText()+ " y tu contraseña es: " +txtClave.getText());
 
                        }
                    }
