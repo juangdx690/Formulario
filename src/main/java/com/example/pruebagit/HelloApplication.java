@@ -87,7 +87,7 @@ public class HelloApplication extends Application {
                                txt.setText("No tienes clave");
                            }
                            else {
-                               txt.setText("Tu usuario es: "+ txtUsuario.getText()+ " y tu contraseña es: " +txtClave.getText());
+                               txt.setText("Tu usuaaario es: "+ txtUsuario.getText()+ " y tu contraseña es: " +txtClave.getText());
 
                        }
                    }
