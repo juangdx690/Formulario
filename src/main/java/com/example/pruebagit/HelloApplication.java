@@ -1,9 +1,7 @@
 package com.example.pruebagit;
 
 import javafx.application.Application;
-import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -42,12 +40,12 @@ public class HelloApplication extends Application {
         Scene scene = new Scene (grid, 300, 275);
 
         stage.setScene(scene);
-
         Text titulo = new Text("Bienvenido");
         titulo.setFont(Font.font("Calibri", FontWeight.BOLD, 20));
         grid.add(titulo, 0, 0, 2,1);
 
         Label usuario = new Label("Usuario");
+
         grid.add(usuario, 0, 1);
 
         TextField txtUsuario = new TextField();
@@ -99,6 +97,12 @@ public class HelloApplication extends Application {
 
            }
        });
+
+    grid.setStyle("-fx-background-color: gray;");
+    usuario.setStyle("-fx-font-weight:bolder; -fx-font-size: 15px ");
+        clave.setStyle("-fx-font-weight:bolder; -fx-font-size: 15px ");
+        txtUsuario.setStyle("-fx-background-color: red;");
+        txtClave.setStyle("-fx-background-color: red;");
 
         stage.show();
 
